@@ -1,0 +1,14 @@
+@import './base/reset';
+@import './base/vars';
+@import './base/base';
+@import './mixins/mixin';
+
+// Blocks
+@import './blocks/header';
+@import './blocks/sidebar';
+@import './blocks/overview';
+@import './blocks/overview-about';
+@import './blocks/overview-services';
+@import './blocks/courses';
+@import './blocks/event';
+@import './blocks/footer';

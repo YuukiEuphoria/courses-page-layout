@@ -1,0 +1,140 @@
+
+
+
+
+.header__title {
+  margin-top: 70px; 
+
+}
+
+.header__nav {
+  margin: 9px 0;
+  border-radius: 4px;
+  max-width: 1148px; 
+  margin: 0 auto;
+  align-items: center;
+  display: flex;
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.header {
+  padding-top: 43px;
+  background: url(../image/header/1.png) rgb(138, 138, 138) 50% / cover no-repeat;  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 790px;
+
+  .nav {
+    display: flex;
+    gap: 40px;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-logo {
+      font-size: 24px;
+      font-weight: 700;
+    }
+    &-btn {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+    }
+    .btn-sign-up {
+      @include button-style(12px 24px);
+    }
+ }
+}
+
+
+
+ li  {
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;  
+
+}
+
+li:hover {
+  color: $blue; 
+}
+li:active {
+  transform: translateY(2px);
+} 
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.burger {
+  display: none;
+}
+
+// .nav-link {
+//   display: flex;
+//   align-items: center;
+//   flex-direction: row;
+//   gap: 2px;
+// }
+
+.nav li {
+  display: flex;
+  align-items: center;
+  // text-align: center;
+}
+
+.nav li:hover {
+  .nav-link{
+
+    color: $blue;
+    
+  }
+}
+.nav-link a{
+  stroke: $blue !important;
+}
+.test {
+  stroke: #000;
+}
+// Header title
+
+.header__title {
+  margin-top: 102px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  &-title {
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    letter-spacing: 1.45px;
+    word-spacing: 3px;
+  }
+  &-info {
+    width: 971px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  &-text {
+    width: 867px;
+    line-height: 155%;
+    height: 60px;
+    margin-bottom: 45px;
+    text-align: center;
+  }
+  &-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 53px;
+  }
+  &-btn {
+    @include button-style(16px 30px);
+  }
+}

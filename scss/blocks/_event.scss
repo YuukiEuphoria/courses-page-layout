@@ -1,0 +1,123 @@
+.event {
+  padding: 128px 0;
+  color: black;
+}
+
+.event-info {
+  padding-bottom: 48px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  width: 421px;
+  h3 {
+    font-size: 48px;
+    margin-bottom: 12px;
+    font-weight: 700;
+  }
+}
+
+
+.event__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.event__card {
+  overflow: hidden;
+  border-radius: 6px;
+  width: 368px;
+  height: 390px;
+  box-shadow: 0px 12px 45px 0px rgba(0, 0, 0, 0.08);
+  &-img {
+    // position: relative;
+  }
+  &-title {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 24px 0 20px;
+    height: 52px;
+    width: 243px;
+    display: flex;
+    text-align: left;
+    line-height: normal;
+  }
+  &-info {
+    margin-top: 24px;
+    flex-direction: column;
+    display: flex;
+    // align-items: center;
+    // justify-content: center;
+    margin: 0 auto;
+    width: 320px;
+  }
+  &-inner {
+    display: flex;
+    // justify-content: space-between;
+    // gap: 29px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+
+.event__card-img-time {
+  font-size: 18px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: $blue;
+  width: 65px;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 500;
+  color: $white;
+}
+
+.event__card-inner {
+  display: flex;
+  align-items: center;
+  // text-align: center;
+  justify-content: space-between;
+  gap: 29px;
+}
+.card-clock {
+  display: flex;
+  gap: 8px;
+}
+.event__card-desc1 {
+}
+.card-map {
+  display: flex;
+  gap: 8px;
+}
+.event__info-desc2 {
+}
+
+.event-img-container  {
+  position: relative;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  width: 368px;
+  height: 240px;
+  overflow: hidden; /* Обрезать изображение, выходящее за пределы контейнера */
+
+}
+
+.event-img-container img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease; /* Плавный переход для эффекта растягивания */
+
+}
+
+.event-img-container:hover img {
+  transform: scale(1.2); /* Увеличьте масштаб (можете настроить на свой вкус) */
+}

@@ -1,0 +1,74 @@
+.overview__about {
+  padding: 134px 0 134px;
+  display: flex;
+  gap: 38px;
+  &-info {
+    width: 519px;
+    height: 433px;
+  }
+  &-title {
+    margin-bottom: 24px;
+    color: $title-text;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: normal;
+    height: 124px;
+    letter-spacing: 2px;
+    word-spacing: 1.5px;
+  }
+  &-desc1 {
+    color: $normal-text; 
+    margin-bottom: 16px;
+    line-height: 155%;
+    width: 478px;
+  }
+  &-desc2 {
+    margin-bottom: 32px;
+    font-size: 20px;
+    line-height: 28px;
+    color: $text;
+  }
+  &-btn {
+    @include button-style(16px 32px)
+  }
+}
+
+.overview__about-img {
+  flex: 0 0 595px;
+  height: 433px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../image/main/about/about.jpg);
+  &-link {
+    background-color: $white;
+    padding: 28px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;  
+    &:hover {
+      background-color: #f2f0f0;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+      opacity: 1;
+
+    }
+    &:active {
+      transform: translateY(4px);
+    }
+  }
+}
+
+.overview__about-img {
+  display: flex;
+  text-align: center;
+}
+
+.overview__about-btn-container{
+  display: flex;
+  height: 55px;
+  text-align: center;
+} 

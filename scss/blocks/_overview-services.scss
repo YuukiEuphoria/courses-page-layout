@@ -1,0 +1,42 @@
+.overview__services {
+  padding-bottom: 124px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &-title {
+    font-size: 48px;
+    font-weight: 700;
+    color: $title-text;
+    margin-bottom: 12px;
+  }
+  &-text {
+    color: $normal-text;
+    width: 432px;
+    text-align: center;
+    margin-bottom: 48px;
+  }
+  &-cards {
+    display: flex;
+    gap: 53px;
+    .card {
+      max-width: 248px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      &-img {
+        margin-bottom: 24px;
+      }
+      &-title {
+        margin-bottom: 16px;
+        color: $title-text;
+        font-size: 24px;
+        font-weight: 700;
+      }
+      &-info {
+        color: $normal-text;
+        font-size: 14px;
+      }
+    }
+  }
+}

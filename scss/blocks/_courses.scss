@@ -1,0 +1,140 @@
+.courses {
+  padding: 60px 0;
+  background-color: $accent;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.courses__info {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.courses__title {
+  color: $black;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.courses__info {
+  color: $normal-text;
+  width: 674px;
+  margin-bottom: 48px;
+  display: flex;
+  align-items: center;
+}
+
+.courses__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px; /* Горизонтальный отступ между карточками */
+}
+
+// Card
+
+.courses-card {
+  background-color: $white;
+  width: 368px;
+  height: 483px;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 6px;
+}
+.courses-card:not(:last-child) {
+  margin-bottom: 0; /* Убираем отступ с последней карточки в каждом ряду */
+}
+.card__inner {
+  // background-color: gray;
+  // min-width: 320px;
+  // min-height: 424px;
+  padding: 24px;
+  color: black;
+  // display: flex;
+  // justify-content: space-between;
+  // flex-direction: column;
+  // display: flex;
+  // justify-content: space-between;
+}
+.card__inner .img {
+  // display: flex;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-between;
+}
+.card__inner .img img {
+  // margin-bottom: 24px;
+}
+.img__icons {
+  padding: 24px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e9e8e8;
+}
+
+.img__icons-icon {
+  border: 0.6px solid #c8c8c8;
+  padding: 8px;
+  border-radius: 50%;
+  width: 32px;
+}
+.card__info {
+  // margin-bottom: 24px;
+}
+
+.card__info-title {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 18px;
+  h4 {
+    color: $text;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  span {
+    font-size: 24px;
+    font-weight: 700;
+    color: $blue;
+  }
+}
+
+.card__info-text {
+  text-align: left;
+  font-size: 14px;
+  color: $normal-text;
+  line-height: 155%;
+}
+
+.courses-btn-container {
+  margin-top: 48px;
+  display: flex;
+  text-align: center;
+  height: 56px;
+  justify-content: center;
+}
+
+.courses-btn {
+  @include button-style(16px 32px);
+}
+
+.img-container {
+  width: 320px;
+  height: 208px;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.img-container img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+
+.img-container:hover img {
+  transform: scale(1.2);
+  // border-radius: 6px;
+}
